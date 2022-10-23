@@ -48,25 +48,25 @@ training_data_model_score = model.score(x_train, y_train)
 print("Model Score/Performance on Training data",training_data_model_score)
 
 rnd_cost = st.sidebar.number_input('Insert R&D Spend')
-st.write('The current number is ', rnd_cost)
+st.write('The R&D Spend is ', rnd_cost)
 
 Administration_cost = st.sidebar.number_input('Insert Administration cost Spend')
-st.write('The current number is ', Administration_cost)
+st.write('The Administration cost Spend is ', Administration_cost)
 
 Marketing_cost_Spend = st.sidebar.number_input('Insert Marketing cost Spend')
-st.write('The current number is ', Marketing_cost_Spend)
+st.write('The Marketing cost Spend is ', Marketing_cost_Spend)
 
 option = st.sidebar.selectbox(
      'Select the region',
-     ('Delhi', 'Banglore', 'Pune'))
+     ('New York', 'California', 'Florida'))
 
 st.write('You selected:', option)
 
-if option == "Pune":
+if option == "New York":
     optn = 0
-if option == "Banglore":
+if option == "California":
     optn = 1
-if option == "Delhi":
+if option == "Florida'":
     optn = 2   
 
 y_pred = model.predict([[Marketing_cost_Spend,Administration_cost,rnd_cost,optn]])
