@@ -66,7 +66,7 @@ if option == "New York":
     optn = 0
 if option == "California":
     optn = 1
-if option == "Florida'":
+if option == "Florida":
     optn = 2   
 
 y_pred = model.predict([[Marketing_cost_Spend,Administration_cost,rnd_cost,optn]])
