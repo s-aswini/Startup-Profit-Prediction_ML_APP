@@ -6,7 +6,7 @@ import pandas as pd # for handling and cleaning the dataset
 import seaborn as sns # for visualization
 import sklearn # for model evaluation and development
 
-string = "Startup's Profit Prediction ML App"
+string = "Startup's Profit Prediction using ML"
 
 st.set_page_config(page_title=string, page_icon="✅", layout="centered", initial_sidebar_state="auto", menu_items=None)
 
